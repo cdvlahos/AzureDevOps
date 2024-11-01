@@ -1,0 +1,7 @@
+[
+        {
+            "op": "add",
+            "path": "/fields/System.Tags",
+            "value": "12345"
+        }
+    ]

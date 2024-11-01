@@ -1,0 +1,26 @@
+[
+    {  
+        "publisherId": "tfs", "scope": "project",  
+        "eventType": "git.push", "resourceVersion": "1.0",  
+        "eventDescription": "Any branch on any repository.",  
+        "consumerId": "webHooks",  
+        "consumerActionId": "httpRequest",  
+        "actionDescription": "Teamcity notification on code push"  
+    },  
+    {  
+        "publisherId": "tfs", "scope": "project",  
+        "eventType": "git.pullrequest.created", "resourceVersion": "1.0",  
+        "eventDescription": "Any branch on any repository.",  
+        "consumerId": "webHooks",  
+        "consumerActionId": "httpRequest",  
+        "actionDescription": "Teamcity notification on PR created"  
+    },  
+    {  
+        "publisherId": "tfs", "scope": "project",  
+        "eventType": "git.pullrequest.updated", "resourceVersion": "1.0",  
+        "eventDescription": "Any branch on any repository.",  
+        "consumerId": "webHooks",  
+        "consumerActionId": "httpRequest",  
+        "actionDescription": "Teamcity notification on PR updated"  
+    }  
+]

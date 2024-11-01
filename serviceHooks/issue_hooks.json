@@ -1,0 +1,50 @@
+[
+    {
+        "publisherId": "tfs", "scope": "project",
+        "eventType": "workitem.created", "resourceVersion": "1.0",
+        "eventDescription": "Issue created",
+        "consumerId": "azureServiceBus",
+        "consumerActionId": "serviceBusQueueSend",
+        "actionDescription": "Queue crn_calculations",
+        "publisherInputs": {
+            "workItemType": "Issue",
+            "projectId": ""
+        }
+    },          
+    {
+        "publisherId": "tfs", "scope": "project",
+        "eventType": "workitem.updated", "resourceVersion": "1.0",
+        "eventDescription": "Issue, field CRN Exposure",
+        "consumerId": "azureServiceBus",
+        "consumerActionId": "serviceBusQueueSend",
+        "actionDescription": "Queue crn_calculations",
+        "publisherInputs": {
+            "workItemType": "Issue",
+            "changedFields": "LessonsDesktop.CRNExposure"
+        }
+    },
+    {
+        "publisherId": "tfs", "scope": "project",
+        "eventType": "workitem.updated", "resourceVersion": "1.0",
+        "eventDescription": "Issue, field CRN Repro",
+        "consumerId": "azureServiceBus",
+        "consumerActionId": "serviceBusQueueSend",
+        "actionDescription": "Queue crn_calculations",
+        "publisherInputs": {
+            "workItemType": "Issue",
+            "changedFields": "LessonsDesktop.CRNRepro"
+        }
+    },
+    {
+        "publisherId": "tfs", "scope": "project",
+        "eventType": "workitem.updated", "resourceVersion": "1.0",
+        "eventDescription": "Issue, field Severity",
+        "consumerId": "azureServiceBus",
+        "consumerActionId": "serviceBusQueueSend",
+        "actionDescription": "Queue crn_calculations",
+        "publisherInputs": {
+            "workItemType": "Issue",
+            "changedFields": "Microsoft.VSTS.Common.Severity"
+        }
+    }
+]
